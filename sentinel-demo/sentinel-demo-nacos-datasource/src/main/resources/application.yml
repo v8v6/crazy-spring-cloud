@@ -1,0 +1,21 @@
+server:
+  port: 9080
+  shutdown: graceful
+  tomcat:
+    max-swallow-size: 1MB
+  servlet:
+    context-path: /
+
+spring:
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    locale: zh_CN
+    time-zone: GMT+8
+
+management:
+  server:
+    port: 11211
+  endpoints:
+    web:
+      exposure:
+        include: '*'
